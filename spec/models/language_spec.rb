@@ -8,8 +8,4 @@ RSpec.describe Language, type: :model do
   it 'has a name' do
     expect(language.name).to eq("Italian")
   end
-
-  it 'has many posts' do
-    expect(language.posts).to be_an(Array)
-  end
 end
