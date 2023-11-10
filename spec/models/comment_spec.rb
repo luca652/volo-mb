@@ -15,7 +15,7 @@ RSpec.describe Comment, type: :model do
   end
 
   let(:parent_comment) do
-    Comment.new(body: "Really good", user_id: user.id, commentable: post)
+    Comment.new(body: "Really good", user: user, commentable: post)
   end
 
   let(:comment_on_comment) do
