@@ -9,6 +9,6 @@ Rails.application.routes.draw do
     resources :comments
     resources :pins, only: [:create]
   end
-  post to: "pins#destroy"
-  get to: "pins#index"
+  post "pins#destroy"
+  get "pins#index"
 end
